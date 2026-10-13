@@ -1,5 +1,7 @@
 # Yakındaki Duraklar
 
+[![CI](https://github.com/RMercan/yakindaki_duraklar/actions/workflows/ci.yml/badge.svg)](https://github.com/RMercan/yakindaki_duraklar/actions/workflows/ci.yml)
+
 Kullanıcının GPS konumuna göre çevredeki otobüs duraklarını haritada gösteren Flutter uygulaması.
 
 ## Özellikler
@@ -19,7 +21,7 @@ lib/
   data/           models, datasources, repository implementasyonları
   presentation/   blocs, pages, widgets
 ```
-Bağımlılık yönü: `presentation -> domain <- data`. Kod kuralları yerel `RULES.md` dosyasında tutulur (repoda yer almaz).
+Bağımlılık yönü: `presentation -> domain <- data`.
 
 ## Çalıştırma
 ```bash
@@ -37,6 +39,9 @@ Aynı adımlar `.github/workflows/ci.yml` ile her push/PR'da çalışır.
 
 ## Git akışı
 `main` kararlı sürüm, `dev` geliştirme dalı; yeni işler gerekirse `dev`'den `feature/*` ile açılır.
+
+## Veri kaynağı
+Harita ve durak verileri © [OpenStreetMap](https://www.openstreetmap.org/copyright) katkıda bulunanlarına aittir (ODbL lisansı).
 
 ## Yol haritası
 - Google Maps ve Google Places verisine geçiş değerlendirmesi
